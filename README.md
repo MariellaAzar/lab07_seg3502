@@ -1,12 +1,11 @@
-# SEG3502 — Laboratoire 7 — Code de départ
+# SEG3502 — Laboratoire 7 — Application complétée
 
 Ce fichier ZIP contient les deux parties nécessaires au laboratoire :
 
 - `client/` : application Angular BookStore à étendre;
 - `server/` : API REST Spring Boot/Kotlin et accès MySQL.
 
-Le code applicatif correspond au code de départ du laboratoire. Aucun code de la solution de l'exercice
-« Authors » n'est inclus.
+Ce dépôt contient l'application complétée du Laboratoire 7, incluant l'intégration entre le client Angular et l'API REST Spring Boot/Kotlin, ainsi que la fonctionnalité de recherche d'auteurs demandée dans l'exercice.« Authors » n'est inclus.
 
 ## 1. Démarrer MySQL
 
