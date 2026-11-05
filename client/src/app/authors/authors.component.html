@@ -1,0 +1,29 @@
+<div>
+  <h2>Search our Authors</h2>
+  <div>
+    <label for="authorId">Author Id:</label>
+    <input type="text" #authorQuery id="authorId" (keyup.enter)="submit(authorQuery.value)">
+    <button (click)="submit(authorQuery.value)">Search</button>
+  </div>
+
+  @if (message) {
+    <div class="container message">{{ message }}</div>
+  }
+
+  @if (author) {
+    <div class="container author">
+      <h3>{{ author.firstName }} {{ author.lastName }}</h3>
+      <p><b>Id:</b> {{ author.id }}</p>
+      <p><b>Books:</b></p>
+      @if (author.books && author.books.length > 0) {
+        <ul>
+          @for (book of author.books; track book.title) {
+            <li>{{ book.title }}</li>
+          }
+        </ul>
+      } @else {
+        <p>No books on record.</p>
+      }
+    </div>
+  }
+</div>
